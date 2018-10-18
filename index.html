@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
             crossorigin="anonymous">
 
+        <!--Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Playfair+Display:400,400i,700,700i" rel="stylesheet">
+
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
@@ -16,33 +19,40 @@
 
     <body>
         <div class='page'>
-            <header>
+            <header class="margin">
                 <nav>
                     <a href="#"><img src="images/mobile-logo.png" alt="hd-logo"></a>
-                    <a href="#"><img src="images/mobile-menu.png" alt="hamburger-icon"></a>
-                    <div>
+                    <span class="menu"><a href="#"><img src="images/mobile-menu.png" alt="hamburger-icon"></a></span>
+
+                    <!-- <div>
                         <a href="#">Projects</a>
                         <a href="#">About</a>
                         <a href="#">Resume</a>
                         <a href="#">Contact</a>
 
-                    </div>
+                    </div> -->
 
                 </nav>
-                <div>
-                    <h1>Hi! I'm Hazel Doctor - a User Experience Designer and Developer based in Atlanta</h1>
-                    <button>See Projects</button>
+                <div class="margin">
+                    <h1>Hi! I'm <span style="color: #73B9C2;">Hazel Doctor</span> - a User Experience Designer and Developer based in Atlanta.</h1>
+                    <button class="see-projects-btn">See Projects</button>
                 </div>
             </header>
 
             <main>
                 <article>
                     <section>
-                        <h4>Website / App Concept</h4>
-                        <h2>OmniCloud</h2>
-                        <p>A cloud storage and file synchronization service for storing, editing, sharing and collaborating
-                            on files all in one place.</p>
-                        <button>View Project</button>
+                        <div class="omnicloud">
+                            <img src="images/omnicloud.png" alt="OmniCloud prototypes">
+                        </div>
+                        <div class="omnicloud-description margin">
+                            <p class="type uppercase">Website / App Concept</p>
+                            <h2 class="uppercase letter-spacing-5">OmniCloud</h2>
+                            <p class="margin-project">A cloud storage and file synchronization service for storing, editing, sharing and
+                                collaborating
+                                on files all in one place.</p>
+                            <button class="view-projects-btn">View Project</button>
+                        </div>
                     </section>
                     <section>
                         <h4>Website</h4>
