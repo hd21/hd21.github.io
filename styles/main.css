@@ -14,58 +14,33 @@ button {
     letter-spacing: 0.12em;
   }
   
+footer {
+    background-color: #F7F7F7;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  
 h2, h3, h4, p {
   font-family: 'Open Sans', sans-serif;
 }
 
-.letter-spacing-5 {
-  letter-spacing: .05em;
+.ah-color{
+  background: linear-gradient(180deg, rgba(221, 214, 243, 0.7) 0%, rgba(250, 172, 168, 0.7) 100%);
 }
 
-.margin {
-  margin: 20px 16px;
+.footer-links {
+  list-style-type: none;
 }
 
-.margin-project {
-  margin: 15px auto;
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
 }
 
-.menu {
-  float: right;
-  margin-top: 10px;
-}
-
-.omnicloud {
-  height: 400px;
-  width: 100%;
+.omnicloud-color {
   background: linear-gradient( 180deg, rgba(163, 189, 237, 0.7) 0%,
   rgba(105, 145, 199, 0.7) 100%);
-  text-align: center;
-  margin: 0 auto;
-}
-
-div.omnicloud img {
-  width: 100%;
-  margin: 92px auto;
-}
-
-.omnicloud-description{
-  margin-top: 40px;
-}
-
-div.omnicloud-description button {
-  font-weight: 600;
-  width: 160px;
-  height: 38px;
-  border-radius: 20px;
-  border: #363636 1px solid;
-  color: #363636;
-  background-color: #fff;
-  display: block;
-  margin: 25px auto 40px auto;
-  position: relative;
-  right: 95px;
-  padding: 5px;
 }
 
 .page {
@@ -92,8 +67,7 @@ div.omnicloud-description button {
 .uppercase {
   text-transform: uppercase;
  }
-
-  
+ 
   /* Mobile Styles */
   @media only screen and (max-width: 400px) {
 
@@ -111,9 +85,82 @@ div.omnicloud-description button {
       line-height: 30px;
     }
 
+    div.ah-color img {
+      width: 100%;
+      margin: 70px auto;
+    }
+
+    .copyright {
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      margin-bottom: 30px;
+    }
+
+    .footer-text {
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 30px;
+      width: 100%;
+      margin: 35px auto;
+      
+    }
+
+    .letter-spacing-5 {
+      letter-spacing: .05em;
+    }
+    
+    .margin {
+      margin: 20px 16px;
+    }
+    
+    .margin-project {
+      margin: 15px auto;
+    }
+    
+    .menu {
+      float: right;
+      margin-top: 10px;
+    }
+    
+    .mobile-project {
+      height: 400px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    div.omnicloud-color img {
+      width: 100%;
+      margin: 92px auto;
+    }
+
+    .omnicloud-description{
+      margin-top: 40px;
+    }
+
     .type {
       font-size: 14px;
     }
+
+    .view-projects-btn {
+      font-weight: 600;
+      width: 160px;
+      height: 38px;
+      border-radius: 20px;
+      border: #363636 1px solid;
+      color: #363636;
+      background-color: #fff;
+      display: block;
+      margin: 25px auto 40px auto;
+      position: relative;
+      right: 95px;
+      padding: 5px;
+    }
+
+    
     
   }
   
