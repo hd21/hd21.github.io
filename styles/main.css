@@ -10,8 +10,11 @@ a {
     text-decoration: none;
 }
 
+html,
 body {
     background-color: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 button {
@@ -57,6 +60,15 @@ li {
 .footer-links li {
     display: inline;
     margin: 0 10px;
+}
+
+.modal-content {
+    display: none;
+    background-color: #f5f5f5;
+    color: #363636;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
 .see-projects-btn {
@@ -120,6 +132,15 @@ li {
         font-size: 18px;
         letter-spacing: .02em;
         line-height: 26px;
+    }
+    .about-heading {
+        font-family: Playfair Display;
+        color: #67A2AE;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 34px;
+        font-size: 22px;
+        margin: 30px auto 10px auto;
     }
     div.ah-color img {
         width: 100%;
@@ -189,8 +210,9 @@ li {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
-    .desktop-no-show {
-        display: none;
+    .design-process {
+        display: inline-block;
+        text-align: center;
     }
     .em-mobile {
         margin: 20px auto;
