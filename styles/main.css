@@ -75,6 +75,7 @@ li {
 .page {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 /* Typography */
