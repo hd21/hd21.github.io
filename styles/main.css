@@ -62,6 +62,11 @@ li {
     margin: 0 10px;
 }
 
+.menu {
+    float: right;
+}
+
+
 .modal-content {
     display: none;
     background-color: #f5f5f5;
@@ -104,6 +109,7 @@ li {
 /* Mobile Styles */
 
 @media only screen and (max-width: 400px) {
+    /* Elements */
     aside {
         display: inline;
     }
@@ -133,6 +139,42 @@ li {
         letter-spacing: .02em;
         line-height: 26px;
     }
+    .em-mobile {
+        margin: 20px auto;
+        width: 250px;
+        display: inline-block;
+        line-height: 26px;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+    .letter-spacing-5 {
+        letter-spacing: .05em;
+    }
+    .hidden {
+        display: none;
+    }
+ 
+    .margin {
+        margin: 20px 16px;
+    }
+    .margin-project {
+        margin: 15px auto;
+    }
+
+    .mobile-project {
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .next {
+        display: inline;
+    }
+    .type {
+        font-size: 14px;
+    }
+    /* About */
     .about-heading {
         font-family: Playfair Display;
         color: #67A2AE;
@@ -142,12 +184,12 @@ li {
         font-size: 22px;
         margin: 30px auto 10px auto;
     }
-    div.ah-color img {
-        width: 100%;
-        margin: 70px auto;
+    .design-process {
+        display: inline-block;
+        text-align: center;
     }
-    .button-case-study,
-    .button-persona {
+    /* Case Study */
+    .button-case-study {
         font-weight: 700;
         text-transform: none;
         width: 200px;
@@ -161,26 +203,6 @@ li {
         display: block;
         position: relative;
         margin: 15px auto 30px auto;
-    }
-    .maia {
-        background-color: #fff;
-        color: #66A098;
-        border: 1px solid #66A098;
-    }
-    .jeanelle {
-        background-color: #fff;
-        color: #6C7FA3;
-        border: 1px solid #6C7FA3;
-    }
-    .caption {
-        font-weight: 400;
-        font-style: italic;
-        font-size: 12px;
-        text-align: center;
-    }
-    .copyright {
-        font-size: 12px;
-        margin-bottom: 24px;
     }
     .case-study-heading-sm {
         font-weight: 600;
@@ -210,59 +232,30 @@ li {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
-    .design-process {
-        display: inline-block;
+    .caption {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 12px;
         text-align: center;
     }
-    .em-mobile {
-        margin: 20px auto;
-        width: 250px;
-        display: inline-block;
-        line-height: 26px;
-        font-size: 16px;
-        text-align: center;
-        letter-spacing: 0.02em;
+
+    .maia {
+        background-color: #fff;
+        color: #66A098;
+        border: 1px solid #66A098;
     }
-    .footer-links {
-        margin-bottom: 30px;
-    }
-    .footer-text {
-        font-family: 'Playfair Display';
-        font-weight: 700;
-        font-size: 30px;
-        width: 100%;
-        margin: 35px auto;
-    }
-    .letter-spacing-5 {
-        letter-spacing: .05em;
-    }
-    .hidden {
-        display: none;
-    }
-    .jeanelle-color {
+    .jeanelle {
+        background-color: #fff;
         color: #6C7FA3;
+        border: 1px solid #6C7FA3;
     }
-    .maia-color {
-        color: #66a098;
-    }
-    .margin {
-        margin: 20px 16px;
-    }
-    .margin-project {
-        margin: 15px auto;
-    }
-    .menu {
-        float: right;
-        margin-top: 10px;
-    }
-    .mobile-project {
-        height: 400px;
+    
+ 
+    /* Home */
+
+    .ah-color img {
         width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .next {
-        display: inline;
+        margin: 70px auto;
     }
     .omnicloud-case-study {
         width: 100%;
@@ -274,6 +267,9 @@ li {
     }
     .omnicloud-description {
         margin-top: 40px;
+    }
+    .margin-project {
+        margin: 15px auto;
     }
     .persona {
         margin: 25px auto;
@@ -304,9 +300,7 @@ li {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400i;
     }
-    .type {
-        font-size: 14px;
-    }
+  
     .view-projects-btn {
         font-weight: 600;
         width: 160px;
@@ -321,11 +315,58 @@ li {
         right: 95px;
         padding: 5px;
     }
+
+    /* Nav */
+    .menu {
+        float: right;
+        margin-top: 10px;
+    }
+
+
+    /* Footer */
+    .copyright {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    .footer-links {
+        margin-bottom: 30px;
+    }
+    .footer-text {
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 30px;
+        width: 100%;
+        margin: 35px auto;
+    }
+      
 }
 
 /* Tablet Styles */
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    /* Home */
+    .margin {
+        margin: 1.5em;
+    } 
+
+    .menu {
+        margin: 1.75% 0; 
+    }
+
+    .mobile-project {
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+  
+
+
+
+  
+}
 
 /* Desktop Styles */
 
