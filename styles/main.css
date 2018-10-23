@@ -39,6 +39,37 @@ li {
     color: #363636;
 }
 
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 2.5%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#menu { 
+    font-size: 7vh; 
+    color: #73B9C2;
+}
+
+.hero-header {
+    margin: auto;
+    width: 80%;
+}
+
+.hero-title { font-size: 7vh; }
+
+.button { align-content: flex-start; }
+
+
+
 /* Classes by Function */
 
 /* Colors */
@@ -84,7 +115,6 @@ li {
     height: 47px;
     border-radius: 25px;
     display: block;
-    margin: 25px auto 40px auto;
 }
 
 /* Spacing */
@@ -104,6 +134,94 @@ li {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+
+/* Home */
+
+.ah-color img {
+    width: 75%;
+}
+.omnicloud-case-study {
+    width: 100%;
+    height: 325px;
+}
+div.omnicloud-color img {
+    width: 100%;
+    margin: 92px auto;
+}
+.omnicloud-description {
+    margin-top: 40px;
+}
+.margin-project {
+    margin: 15px auto;
+}
+.persona {
+    margin: 25px auto;
+}
+.persona img {
+    width: 100%;
+}
+.persona li {
+    font-size: 18px;
+}
+.persona-quote {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    width: 212px;
+    text-align: center;
+    margin: 16px auto;
+}
+.summary-case-study {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 28px;
+    margin-top: 30px;
+}
+.stats-results {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400i;
+}
+
+.view-projects-btn {
+    font-weight: 600;
+    width: 160px;
+    height: 38px;
+    border-radius: 20px;
+    border: #363636 1px solid;
+    color: #363636;
+    background-color: #fff;
+    display: block;
+    margin: 25px auto 40px auto;
+    position: relative;
+    right: 95px;
+    padding: 5px;
+}
+
+/* Nav */
+.menu {
+    float: right;
+    margin-top: 10px;
+}
+
+
+/* Footer */
+.copyright {
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+.footer-links {
+    margin-bottom: 30px;
+}
+.footer-text {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    margin: 35px auto;
 }
 
 /* Mobile Styles */
