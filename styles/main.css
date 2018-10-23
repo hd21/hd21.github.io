@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/*Base Elements  */
-
 a {
     text-decoration: none;
 }
@@ -39,11 +37,15 @@ li {
     color: #363636;
 }
 
+/* Home  - START*/
+
+/* Hero */
+
 .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: stretch;
     margin: 5%;
 }
 
@@ -59,13 +61,31 @@ li {
 }
 
 .hero-header {
-    margin: auto;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    max-height: 70%;
+    margin-top: 20vh;
 }
 
-.hero-title { font-size: 6vh; }
+.hero-title { 
+    font-size: 7vh; 
+}
 
 .button { align-content: flex-start; }
+
+.see-projects-btn {
+    background-color: #67A2AE;
+    color: #fff;
+    font-weight: 600;
+    width: 203px;
+    height: 47px;
+    border-radius: 25px;
+    display: block;
+}
+
+
+/* Menu */
 
 .modal-window {
     position: fixed;
@@ -118,21 +138,82 @@ li {
   }
 
 
+/* Case Studies - Brief */
 
-/* Classes by Function */
 
-/* Colors */
-
-.ah-color {
+.ah-bkgrd {
     background: linear-gradient(180deg, rgba(221, 214, 243, 0.7) 0%, rgba(250, 172, 168, 0.7) 100%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
 }
 
-.omnicloud-color {
+.omnicloud-bkgrd {
     background: linear-gradient( 180deg, rgba(163, 189, 237, 0.7) 0%, rgba(105, 145, 199, 0.7) 100%);
     display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw;
 }
+
+.omnicloud-bkgrd img, .ah-bkgrd img {
+    width: 100%;
+    line-height: 0;
+    margin: 10%;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+  }
+
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
 
 /* Elements */
 
@@ -149,25 +230,6 @@ align-items: center; /* align vertical */
     float: right;
 }
 
-
-.modal-content {
-    display: none;
-    background-color: #f5f5f5;
-    color: #363636;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-.see-projects-btn {
-    background-color: #67A2AE;
-    color: #fff;
-    font-weight: 600;
-    width: 203px;
-    height: 47px;
-    border-radius: 25px;
-    display: block;
-}
 
 /* Spacing */
 
@@ -191,17 +253,12 @@ align-items: center; /* align vertical */
 
 /* Home */
 
-.ah-color img {
-    width: 75%;
-}
+
 .omnicloud-case-study {
     width: 100%;
     height: 325px;
 }
-div.omnicloud-color img {
-    width: 100%;
-    margin: auto;
-}
+
 .omnicloud-description {
     margin-top: 40px;
 }
@@ -238,20 +295,7 @@ div.omnicloud-color img {
     font-weight: 400i;
 }
 
-.view-projects-btn {
-    font-weight: 600;
-    width: 160px;
-    height: 38px;
-    border-radius: 20px;
-    border: #363636 1px solid;
-    color: #363636;
-    background-color: #fff;
-    display: block;
-    margin: 25px auto 40px auto;
-    position: relative;
-    right: 95px;
-    padding: 5px;
-}
+
 
 /* Nav */
 .menu {
@@ -276,10 +320,12 @@ div.omnicloud-color img {
     margin: 35px auto;
 }
 
+/* Home - END */
+
 /* Mobile Styles */
 
 @media only screen and (max-width: 400px) {
-    /* Elements */
+ 
     aside {
         display: inline;
     }
@@ -309,6 +355,31 @@ div.omnicloud-color img {
         letter-spacing: .02em;
         line-height: 26px;
     }
+
+    .hero {
+        margin: 5%;
+    }
+
+    .hero-header {
+        margin: auto;
+    }
+    
+    .hero-title { 
+        font-size: 6vh; 
+    }
+    
+    .summary {
+        display: flex;
+        flex-direction: column;
+        /* max-width: 90%;
+        max-height: 70%;
+        margin-top: 20vh; */
+    }
+
+    #case-study-desktop {
+        display: none;
+    }
+
     .em-mobile {
         margin: 20px auto;
         width: 250px;
@@ -325,10 +396,6 @@ div.omnicloud-color img {
         display: none;
     }
  
-    /* .margin {
-        margin: 20px 16px;
-    } */
-
     .margin {
         margin: 5%;
     }
@@ -439,9 +506,7 @@ div.omnicloud-color img {
         width: 100%;
         margin: 92px auto;
     }
-    .omnicloud-description {
-        margin-top: 40px;
-    }
+  
     .margin-project {
         margin: 15px auto;
     }
@@ -485,9 +550,7 @@ div.omnicloud-color img {
         background-color: #fff;
         display: block;
         margin: 25px auto 40px auto;
-        position: relative;
-        right: 95px;
-        padding: 5px;
+       float: left;
     }
 
     /* Nav */
@@ -519,20 +582,55 @@ div.omnicloud-color img {
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
-    /* Home */
-    .margin {
-        margin: 1.5em;
-    } 
-
-    .menu {
-        margin: 1.75% 0; 
+    h2 {
+        font-size: 2.5em;
     }
 
-    .mobile-project {
-        height: 400px;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
+    p {
+        font-size: 1.25em;
+        letter-spacing: .02em;
+        line-height: 28px;
+
+    }
+
+    .letter-spacing-5 {
+        letter-spacing: .05em;
+    }
+
+    .hero {
+        margin: 5%;
+    }
+
+    .hero-header {
+        margin: auto;
+    }
+    
+    .hero-title { 
+        font-size: 6vh; 
+    }
+
+    #case-study-desktop {
+        display: none;
+    }
+
+    .view-projects-btn {
+        font-weight: 600;
+        width: 160px;
+        height: 38px;
+        border-radius: 20px;
+        border: #363636 1px solid;
+        color: #363636;
+        background-color: #fff;
+        display: block;
+        margin: 25px auto 40px auto;
+       float: left;
+    }
+
+    .margin {
+        margin: 5%;
+    }
+    .margin-project {
+        margin: 15px auto;
     }
 
   
@@ -544,4 +642,10 @@ div.omnicloud-color img {
 
 /* Desktop Styles */
 
-@media only screen and (min-width: 961px) {}
+@media only screen and (min-width: 961px) {
+
+    #case-study-mobile {
+        display: none;
+    }
+    
+}
