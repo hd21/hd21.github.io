@@ -44,7 +44,7 @@ li {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    padding: 2.5%;
+    margin: 5%;
 }
 
 #header {
@@ -52,7 +52,6 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-
 
 #menu { 
     font-size: 7vh; 
@@ -64,9 +63,59 @@ li {
     width: 80%;
 }
 
-.hero-title { font-size: 7vh; }
+.hero-title { font-size: 6vh; }
 
 .button { align-content: flex-start; }
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.98);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #fff;
+    color: #333;
+  }
+  .modal-window header {
+    font-weight: bold;
+  }
+  .modal-window h2 {
+    font-size: 200%;
+    color: #333;
+  }
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 2.25em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 5%;
+    width: 70px;
+    text-decoration: none;
+  }
+  .modal-close:hover {
+    color: #000;
+  }
 
 
 
@@ -80,6 +129,9 @@ li {
 
 .omnicloud-color {
     background: linear-gradient( 180deg, rgba(163, 189, 237, 0.7) 0%, rgba(105, 145, 199, 0.7) 100%);
+    display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
 }
 
 /* Elements */
@@ -148,7 +200,7 @@ li {
 }
 div.omnicloud-color img {
     width: 100%;
-    margin: 92px auto;
+    margin: auto;
 }
 .omnicloud-description {
     margin-top: 40px;
@@ -273,8 +325,12 @@ div.omnicloud-color img {
         display: none;
     }
  
-    .margin {
+    /* .margin {
         margin: 20px 16px;
+    } */
+
+    .margin {
+        margin: 5%;
     }
     .margin-project {
         margin: 15px auto;

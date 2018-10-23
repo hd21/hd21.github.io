@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
             crossorigin="anonymous">
 
         <!--Google Fonts -->
@@ -19,8 +19,9 @@
 
     <body>
         <div class="page">
-            <section class="modal-content">
-                <button class="close menu"><img src="images/close.png" alt="Close"></button>
+
+            <div class="modal-window" id="open-modal">
+                <a href="#" class="modal-close"><i class="far fa-times-circle"></i></a>
                 <a href="#">
                     <h2 class="uppercase letter-spacing-5 margin" style="margin-top: 25%;">Projects</h2>
                 </a>
@@ -33,12 +34,12 @@
                 <a href="#">
                     <h2 class="uppercase letter-spacing-5 margin">Contact</h2>
                 </a>
-            </section>
+            </div>
 
-            <section class="hero">
+            <section class="hero margin">
                 <header id="header">
                     <a href="index.html" id="logo"><img src="images/mobile-logo.png" alt="hd-logo"></a>
-                    <nav><a id="menu">&#8801;</a></nav>
+                    <nav><a id="menu" href="#open-modal">&#8801;</a></nav>
                 </header>
 
                 <header class="hero-header">
