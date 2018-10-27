@@ -4,6 +4,7 @@
     <head>
         <title>Hazel Doctor - UX Designer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" sizes="32x32" href="assets/images/hd-favicon.png">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
@@ -16,34 +17,50 @@
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/custom.css">
     </head>
 
     <body>
         <div class="container">
             <header class="project-header">
                 <nav>
-                    <a href="index.html" id="logo"><img src="assets//images/hd-logo.png" alt="HD logo"></a>
+                    <a href="index.html" id="logo"><img src="assets/images/hd-logo.png" alt="HD logo"></a>
                     <a id="menu" href="#open-modal">&#8801;</a>
                 </nav>
+
+                <div id="open-modal" class="modal-window">
+                        <div>
+                          <a href="#" title="Close" class="modal-close"><i class="far fa-times-circle"></i></a>
+                          <div class="menu-items">
+                            <h2 class="content-title"><a href="" class="menu-title">Projects</a></h2>
+                            <h2 class="content-title"><a href="" class="menu-title">About Me</a></h2>
+                            <h2 class="content-title"><a href="mailto:hazelmdoctor@gmail.com" class="menu-title">Contact</a></h2>
+                            <h2 class="content-title"><a href="" class="menu-title">Resume</a></h2>
+                          </div>
+                          </div>
+                      </div>
             </header>
 
             <main>
-                <section>
-                    <div>
-                        <h4 class="hidden">Summary</h4>
-                        <h2 class="uppercase letter-spacing-5" style="text-align: center;">OmniCloud</h2>
-                        <p class="summary-case-study">OmniCloud is a cloud storage and file
+                <section class="summary-container">
+                    <div class="section-container">
+                        <p class="project-step">Summary</p>
+                        <h2 class="content-title">OmniCloud</h2>
+                        <p>OmniCloud is a cloud storage and file
                             synchronization
                             service that allows users to store, customize,
                             share, and work on files all in one place, solving a need
                             for thousands of users worldwide.</p>
-                        <span>
-                            <button class="button-case-study">Desktop Prototype</button>
-                            <button class="button-case-study">Mobile Prototype</button>
+                        <span class="omnicloud-btn-container">
+                            <button class="omnicloud-btn">Desktop Prototype</button>
+                            <button class="omnicloud-btn">Mobile Prototype </button>
                         </span>
                     </div>
-                    <h4 class="case-study-heading-sm" style="color: #3571B6;">Overview</h4>
-                    <h3 class="case-study-heading-lg">Problem</h3>
+
+                    <img src="assets/images/omnicloud-landing-page.png" alt="Omnicloud landing page" class="project-img">
+
+                    <p class="project-step">Overview</p>
+                    <h4 class="project-title">Problem</h4>
                     <p>Cloud storage apps are known for securely storing
                         digital assets such as photos and
                         documents.
@@ -57,7 +74,7 @@
                         files,
                         other can become overwhelmed and get lost in the app.</p>
 
-                    <h3 class="case-study-heading-lg">Solution</h3>
+                    <h4 class="project-title">Solution</h4>
                     <p>OmniCloud aims to address these concerns by bringing
                         these features together in a simple,
                         no-frills layout. Our major design challenge was to
@@ -73,8 +90,8 @@
                         bridging the desires of stakeholders and the needs of
                         users.</p>
 
-                    <h3 class="case-study-heading-lg">Roles</h3>
-                    <ul class="no-list-style case-study-li ">
+                    <h4 class="project-title margin-top">Roles</h4>
+                    <ul>
                         <li>UX Researcher</li>
                         <li>Content Strategist</li>
                         <li>Visual Designer</li>
@@ -82,8 +99,8 @@
                     </ul>
 
 
-                    <h3 class="case-study-heading-lg">Deliverables</h3>
-                    <ul class="no-list-style case-study-li">
+                    <h4 class="project-title margin-top">Deliverables</h4>
+                    <ul>
                         <li>Competitive analysis</li>
                         <li>Survey results</li>
                         <li>User personas</li>
@@ -92,25 +109,24 @@
                         <li>High fidelity prototypes</li>
                     </ul>
 
-                    <h3 class="case-study-heading-lg">Tools</h3>
-                    <ul class="no-list-style case-study-li">
+                    <h4 class="project-title margin-top">Tools</h4>
+                    <ul>
                         <li>Sketch</li>
                         <li>Balsamiq</li>
                         <li>Maze</li>
                         <li>InVision</li>
                     </ul>
 
-
                 </section>
 
-                <section>
-                    <h4 class="case-study-heading-sm" style="color: #3571B6;">Process</h4>
-                    <h3 class=" case-study-heading-lg">Discover
-                        and Analyze</h3>
+                <section class="section-container">
+                    <p class="project-step">Process</p>
+                    <h4 class="project-title">Discover
+                        and Analyze</h4>
 
-                    <div>
-                        <p class="case-study-heading-md">Client Brief</p>
-                        <p style="margin-bottom: 20px;">My client had an idea for a cloud storage app with
+                    <div class="section-container">
+                        <h4 class="project-section">Client Brief</h4>
+                        <p>My client had an idea for a cloud storage app with
                             the right combination of features to meet
                             the
                             needs of a specific audience. They have yet to
@@ -119,59 +135,51 @@
                             they have a current set of desired features:
                         </p>
                         <p style="font-weight: 600;">Requirements:</p>
-                        <ul class="margin">
-                            <li>
-                                <p>saving content you find on the web (links,
-                                    images, videos, etc.)</p>
+                        <ul>
+                            <li>saving content you find on the web (links, images, videos, etc.)
                             </li>
-                            <li>
-                                <p>organizing that content using things like
-                                    categories, tags, groups, and/or folders</p>
+                            <li>organizing that content using things like
+                                    categories, tags, groups, and/or folders
                             </li>
-                            <li>
-                                <p>creating content (notes, documents, maybe
-                                    spreadsheets?)</p>
+                            <li>creating content (notes, documents, maybe
+                                    spreadsheets?)
                             </li>
-                            <li>
-                                <p>uploading files (videos, images, PDFs, etc.)
-                                    from a computer or mobile device</p>
+                            <li>uploading files (videos, images, PDFs, etc.)
+                                    from a computer or mobile device
                             </li>
-                            <li>
-                                <p>sharing a single item with someone else (and
-                                    vice-versa)</p>
+                            <li>sharing a single item with someone else (and
+                                    vice-versa)
                             </li>
-                            <li>
-                                <p>sharing a folder or group of items with someone
-                                    else (and vice-versa)</p>
+                            <li>sharing a folder or group of items with someone
+                                    else (and vice-versa)
                             </li>
-                            <li>
-                                <p>connecting with other users for real-time
-                                    collaboration in notes or documents</p>
+                            <li>connecting with other users for real-time
+                                    collaboration in notes or documents
                             </li>
                         </ul>
                     </div>
 
-                    <div>
-                        <p class="case-study-heading-md">Exploring the Market</p>
+                    <div class="section-container">
+                        <h4 class="project-section">Exploring the Market</h4>
                         <p>To begin, I wanted to understand the market for cloud storage apps. I explored the current landscape through a
                             competitive
                             analysis, which looked into three major competitors that catered to specific interests. Here are some notable
                             findings:
                         </p>
                         <figure>
-                            <img src="images/pinterest.png" alt="Competitive analysis - Pinterest">
-                            <img src="images/evernote.png" alt="Competitive analysis - Evernote">
-                            <img src="images/google-drive.png" alt="Competitive analysis - G Suite">
+                            <img src="assets/images/pinterest.png" alt="Competitive analysis - Pinterest">
+                            <img src="assets/images/evernote.png" alt="Competitive analysis - Evernote">
+                            <img src="assets/images/google-drive.png" alt="Competitive analysis - G Suite">
                         </figure>
                     </div>
 
-                    <div>
-                        <p class="case-study-heading-md">Gaining Insights from Surveys and Interviews</p>
+                    <div class="section-container">
+                        <h4 class="project-section">Gaining Insights from Surveys and Interviews</h4>
                         <p>After capturing a picture of the competitive landscape, I wanted to understand what users thought about cloud
                             storage
                             apps
                             by creating a survey with the following goals:</p>
-                        <ul class="margin no-list-style case-study-li" style="font-weight: 600;">
+                        <ul style="font-weight: 600;">
                             <li>To capture users’ general thoughts on cloud storage apps </li>
                             <li>To understand users’ opinions on their preferred cloud storage apps </li>
                             <li>To inspect features in the apps that are favorable</li>
@@ -182,37 +190,42 @@
                             them
                             use
                             well-known cloud storage apps such as Google Drive and DropBox.</p>
-                        <div class="stats-results">
-                            <em class="em-mobile">
-                                <strong style="color: #3571B6;">50%</strong> of users utilize cloud storage
-                                apps for personal
-                                use and typically store,
-                                create, edit and
-                                collaborate on
-                                files
-                            </em>
-                            <em class="em-mobile"> <strong style="color: #3571B6;">70% </strong>find it helpful for cloud storage apps to be
-                                accessible across devices </em>
+                        <ul>
+                            <li>
+                                <em>
+                                    <strong style="color: #3571B6;">50%</strong> of users utilize cloud storage
+                                            apps for personal
+                                            use and typically store,
+                                            create, edit and
+                                            collaborate on
+                                            files
+                                </em>
+                            </li>
+                            <li>
+                                <em>
+                                    <strong style="color: #3571B6;">70% </strong>find it helpful for cloud storage apps to be
+                                        accessible across devices </em>
+                            </li>
+                            <li>
+                                <em><strong style="color: #3571B6;">About half of respondents</strong> find that web interface and
+                                        security could be improved.</em>
+                            </li>
+                            <li>
+                                <em><strong style="color: #3571B6;">There were mixed reviews on collaboration features,</strong>
+                                        yet those who favor them used cloud storage
+                                        apps for
+                                        business</em>
+                            </li>
+                        
+                            </ul>
 
-
-                            <em class="em-mobile"><strong style="color: #3571B6;">About half of respondents</strong> find that web interface and
-                                security could be improved.</em>
-                            <em class="em-mobile"><strong style="color: #3571B6;">There were mixed reviews on collaboration features,</strong>
-                                yet those who favor them used cloud storage
-                                apps for
-                                business</em>
-                        </div>
-                        <p>While these findings were helpful, I have only scratched the surface. It was time to dig deeper and ask: who
+                        <p class="margin-top">While these findings were helpful, I have only scratched the surface. It was time to dig deeper and ask: who
                             really
                             are
                             these users? What value do they get from using these cloud storage apps?</p>
 
-                        <br>
-
                         <p>To understand our users better, I interviewed three individuals about themselves, their daily habits, and their
                             experiences with cloud storage apps. The interview style was largely open-ended.</p>
-
-                        <br>
 
                         <p>The pattern that emerged from the interviews was their need to have their files synchronized and accessible in
                             both
@@ -225,33 +238,34 @@
                             as
                             editing and collaborating on files. These findings were laid out into the following personas:
                         </p>
+
                         <div class="persona">
+                            <img src="assets/images/maia-persona.png" alt="Maia persona" class="project-img">
 
-                            <img src="images/maia-persona.png" alt="Maia persona">
+                            <p>"I have tons of photos and docs - I need a place to keep them all."</p>
 
-                            <p class="persona-quote maia-color">"I have tons of photos and docs - I need a place to keep them all."</p>
-
-                            <p style="font-weight: 600;" class="maia-color">Goals</p>
+                            <p>Goals</p>
                             <p>To find an easy, secure and free way to store essays, notes, and photos.</p>
 
-                            <p style="font-weight: 600; margin-top: 10px;" class="maia-color">Frustrations</p>
-                            <ul class="margin no-list-style">
-                                <li style=" margin-bottom: 10px;">Not enough
+                            <p>Frustrations</p>
+                            <ul>
+                                <li>Not enough
                                     storage</li>
                                 <li>Some features can be excessive</li>
                             </ul>
 
-                            <p style="font-weight: 600; margin-top: 10px;" class="maia-color">Motivations</p>
-                            <ul class="margin no-list-style">
-                                <li style=" margin-bottom: 10px;">Easy-to-use interface</li>
+                            <p>Motivations</p>
+                            <ul>
+                                <li>Easy-to-use interface</li>
                                 <li>Able to use app in phone and laptop</li>
                             </ul>
 
-                            <button class=".button-case-study maia">See full persona</button>
+                            <button>See full persona</button>
                         </div>
+
                         <div class="persona">
 
-                            <img src="images/jeanelle-persona.png" alt="Jeanelle persona">
+                            <img src="assets/images/jeanelle-persona.png" alt="Jeanelle persona">
 
                             <p class="persona-quote jeanelle-color">“Always in search of the best products for my team’s needs. ”</p>
 
@@ -589,18 +603,17 @@
                 </aside>
 
             </main>
-
-            <footer>
-                <p class="footer-text">Let's <span>talk.</span></p>
-                <ul class="footer-links no-list-style">
-                    <li><a href="https://www.linkedin.com/in/hazeldoctor/"></a></li>
-                    <li><a href="https://twitter.com/hazeldoesthings"></li>
-                    <li><a href="https://github.com/hd21"></a></li>
-                    <li><a href="mailto:hazelmdoctor@gmail.com"></a></li>
-                </ul>
-                <p class="copyright">© 2018 Hazel Doctor. All Rights Reserved.</p>
-            </footer>
         </div>
+
+        <footer>
+                <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
+                <ul class="footer-links">
+                    <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
+                </ul>
+                <p class="copyright">Designed and developed with 🧡💛💙  by Hazel Doctor.</p>
+            </footer>
 
         <script src="script.js"></script>
 
