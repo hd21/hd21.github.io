@@ -19,111 +19,67 @@
     </head>
 
     <body>
-        <div class="page">
-            <div class="modal-window" id="open-modal">
-                <a href="#" class="modal-close"><i class="far fa-times-circle"></i></a>
-                <a href="#">
-                    <h2 class="uppercase letter-spacing-5 margin" style="margin-top: 25%;">Projects</h2>
-                </a>
-                <a href="#">
-                    <h2 class="uppercase letter-spacing-5 margin">About</h2>
-                </a>
-                <a href="#">
-                    <h2 class="uppercase letter-spacing-5 margin">Resume</h2>
-                </a>
-                <a href="#">
-                    <h2 class="uppercase letter-spacing-5 margin">Contact</h2>
-                </a>
-            </div>
+        <div class="container">
 
-            <section class="hero">
-                <header id="header">
-                    <a href="index.html" id="logo"><img src="assets/logos/hd-logo.png" alt="hd-logo"></a>
-                    <nav><a id="menu" href="#open-modal">&#8801;</a></nav>
-                </header>
+            <header class="hero">
+                <nav>
+                    <a href="index.html"><img src="assets/images/hd-logo.png" alt="HD logo"></a>
+                    <a id="menu" href="#open-modal">&#8801;</a>
+                </nav>
 
-                <header class="hero-header">
-                    <h1 class="hero-title">Hi! I'm <span style="color: #73B9C2;">Hazel Doctor</span> - a User Experience Designer and Developer based
+                <div id="open-modal" class="modal-window">
+                        <div>
+                          <a href="#" title="Close" class="modal-close"><i class="far fa-times-circle"></i></a>
+                          <div class="menu-items">
+                            <h2 class="content-title"><a href="" class="menu-title">Projects</a></h2>
+                            <h2 class="content-title"><a href="" class="menu-title">About Me</a></h2>
+                            <h2 class="content-title"><a href="mailto:hazelmdoctor@gmail.com" class="menu-title">Contact</a></h2>
+                            <h2 class="content-title"><a href="" class="menu-title">Resume</a></h2>
+                          </div>
+                          </div>
+                      </div>
+
+                <div class="hero-text">
+                    <h1 id="hero-title">Hi! I'm <span style="color: #73B9C2;">Hazel Doctor</span> 👋 - <br> a User Experience Designer and Developer
+                        based
                         in
-                        Atlanta.</h1>
-                    <a href=""><button class="see-projects-btn">See Projects</button></a>
-                </header>
-
-            </section>
+                        Atlanta, GA.</h1>
+                    <a href="#omnicloud-background"><button id="hero-button">See latest work</button></a>
+                </div>
+            </header>
 
 
             <main>
+                <article>
+                    <div class="omnicloud content">
+                        <div id="omnicloud-background" class="u-max-full-width">
+                            <img src="assets/images/omnicloud-mockup.png" alt="OmniCloud prototypes">
+                        </div>
 
-                <section id="case-study-desktop">
-                    <div class="omnicloud-bkgrd content">
-                        <img src="assets/images/omnicloud-cs.png" alt="OmniCloud prototypes">
                         <div class="content-overlay"></div>
+
                         <div class="content-details fadeIn-bottom">
-                            <p class="type uppercase">Website / App Concept</p>
-                            <h2 class="uppercase letter-spacing-5">OmniCloud</h2>
-                            <p class="margin-project">A cloud storage and file synchronization service for storing, editing, sharing and
+                            <p class="content-type">Website / App Concept</p>
+                            <h2 class="content-title">OmniCloud</h2>
+                            <p class="content-summary">A cloud storage and file synchronization service for storing, editing, sharing and
                                 collaborating
                                 on files all in one place.</p>
-                            <a href="omnicloud.html"><button class="view-projects-btn">View Project</button></a>
+                            <a href="omnicloud.html"><button class="content-btn">View Project</button></a>
                         </div>
                     </div>
-                </section>
-
-                <section id="case-study-mobile">
-                    <div class="omnicloud-bkgrd">
-                        <img src="assets/images/omnicloud-cs.png" alt="OmniCloud prototypes">
-                    </div>
-                    <div class="margin">
-                        <p class="type uppercase">Website / App Concept</p>
-                        <h2 class="uppercase letter-spacing-5">OmniCloud</h2>
-                        <p class="margin-project">A cloud storage and file synchronization service for storing, editing, sharing and
-                            collaborating
-                            on files all in one place.</p>
-                        <a href="omnicloud.html"><button class="view-projects-btn">View Project</button></a>
-                    </div>
-                </section>
-
-
-                <section id="case-study-desktop">
-                    <div class="ah-bkgrd content">
-                        <img src="images/ah.png" alt="AH website">
-                        <div class="content-overlay"></div>
-                        <div class="content-details fadeIn-bottom">
-                            <p class="type uppercase">Website / App Concept</p>
-                            <h2 class="uppercase letter-spacing-5">OmniCloud</h2>
-                            <p class="margin-project">A cloud storage and file synchronization service for storing, editing, sharing and
-                                collaborating
-                                on files all in one place.</p>
-                            <a href="omnicloud.html"><button class="view-projects-btn">View Project</button></a>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="case-study-mobile">
-                    <div class="ah-bkgrd">
-                        <img src="images/ah.png" alt="AH website">
-                    </div>
-                    <div class="margin">
-                        <p class="type uppercase">Website</p>
-                        <h2 class="uppercase letter-spacing-5">AH Website</h2>
-                        <p class="margin-project">WIP</p>
-                        <button class="view-projects-btn">View Project</button>
-                    </div>
-                </section>
-
+                </article>
             </main>
-
-            <footer>
-                <p class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></p>
-                <ul class="footer-links no-list-style">
-                    <li><a href="https://www.linkedin.com/in/hazeldoctor/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
-                    <li><a href="https://twitter.com/hazeldoesthings"><img src="images/twitter.png" alt="Twitter"></a></li>
-                    <li><a href="https://github.com/hd21"><img src="images/github.png" alt="GitHub"></a></li>
-                    <li><a href="mailto:hazelmdoctor@gmail.com"><img src="images/mail.png" alt="E-mail"></a></li>
-                </ul>
-                <p class="copyright">© 2018 Hazel Doctor. All Rights Reserved.</p>
-            </footer>
         </div>
+
+        <footer>
+                <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
+                <ul class="footer-links">
+                    <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
+                </ul>
+                <p class="copyright">Designed and developed with 🧡 💛 💙  by Hazel Doctor.</p>
+            </footer>
 
         <script src="js/script.js"></script>
     </body>
