@@ -88,7 +88,7 @@ nav img {
 
 @media (min-width: 400px) {
   nav img {
-    width: 15%;
+    width: 20%;
     height: auto;
   }
   #menu {
@@ -115,6 +115,20 @@ nav img {
     top: 5%;
     width: 70px;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 750px) {
+  nav img {
+    width: 15%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav img {
+    width: 20%;
+    height: auto;
   }
 }
 
@@ -313,11 +327,13 @@ footer {
 .footer-links {
   list-style: none;
   display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .footer-links li {
   font-size: 3rem;
-  margin: 0 3 vw;
+  margin: 0 3vw;
   color: #222;
 }
 
@@ -346,7 +362,7 @@ footer {
   margin-top: 3rem;
 }
 
-.project-img {
+img {
   width: 100%;
   height: auto;
 }
@@ -388,6 +404,7 @@ footer {
 ul {
   width: 90%;
   margin: 0 auto;
+  list-style: none;
 }
 
 figure {
@@ -395,7 +412,87 @@ figure {
 }
 
 figure img {
-  width: 80%;
+  width: 75%;
   height: auto;
   margin: 2rem 0;
+}
+
+.maia {
+  color: #66a098;
+  font-weight: 600;
+}
+
+.maia-btn {
+  border: 2px solid #66a098;
+  color: #66a098;
+  font-size: 1em;
+}
+
+.jeanelle {
+  color: #6c7fa3;
+  font-weight: 600;
+}
+
+.jeanelle-btn {
+  border: 2px solid #6c7fa3;
+  color: #6c7fa3;
+  font-size: 1em;
+}
+
+.sitemap,
+.onboarding-digital {
+  display: none;
+}
+
+.caption {
+  font-size: 0.8em;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+aside ul {
+  text-align: center;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 10px;
+  font-size: 30px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }
