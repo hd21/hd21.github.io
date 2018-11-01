@@ -23,22 +23,27 @@
         <div class="container">
 
             <header class="hero">
-                <nav>
-                    <a href="index.html"><img src="assets/images/hd-logo.png" alt="HD logo"></a>
-                    <a id="menu" href="#open-modal">&#8801;</a>
-                </nav>
 
-                <div id="open-modal" class="modal-window">
-                        <div>
-                          <a href="#" title="Close" class="modal-close"><i class="far fa-times-circle"></i></a>
-                          <div class="menu-items">
-                            <h2 class="content-title"><a href="" class="menu-title">Projects</a></h2>
-                            <h2 class="content-title"><a href="" class="menu-title">About Me</a></h2>
-                            <h2 class="content-title"><a href="mailto:hazelmdoctor@gmail.com" class="menu-title">Contact</a></h2>
-                            <h2 class="content-title"><a href="" class="menu-title">Resume</a></h2>
+                    <div id="nav" class="navigation">
+                            <span id="close-btn" onclick="navToggle()">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                            </span>
+                          <div class="logo">
+                                <img src="assets/images/hd-logo.png" alt="HD logo">
                           </div>
+                          
+                          <ul class="nav-links">
+                            <li><a class="menuItems" href="#">PROJECTS</a></li>		
+                            <li><a class="menuItems" href="#">ABOUT</a></li>				
+                            <li><a class="menuItems" href="#">RESUME</a></li>
+                          </ul>			
                           </div>
-                      </div>
+                          
+                          <div id="main">
+                          </div>
+              
 
                 <div class="hero-text">
                     <h1 id="hero-title">Hi! I'm <span style="color: #67a2ae;">Hazel Doctor</span> 👋 - <br> a User Experience Designer and Developer
@@ -79,7 +84,7 @@
                     <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
                 </ul>
-                <p class="copyright">Designed and developed with 🧡💛💙  by Hazel Doctor.</p>
+                <p class="copyright">Designed and developed with 🧡💛  by Hazel Doctor.</p>
             </footer>
 
         <script src="js/script.js"></script>

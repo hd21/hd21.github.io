@@ -6,14 +6,14 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .container {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  margin: 30px auto 0 auto;
+  max-width: 960px;
+  margin: 5% auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -167,13 +167,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: #222;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 /* Typography
@@ -224,15 +224,6 @@ h6 {
   letter-spacing: 0;
 }
 
-/* p,
-a,
-em,
-li,
-strong {
-  margin-top: 0;
-  font-size: 18px;
-} */
-
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 {
@@ -255,35 +246,6 @@ strong {
   }
 }
 
-@media (min-width: 1000px) {
-  h1 {
-    font-size: 5.6rem;
-  }
-  h2 {
-    font-size: 4.8rem;
-  }
-  h3 {
-    font-size: 4.2rem;
-  }
-  h4 {
-    font-size: 3.6rem;
-  }
-  h5 {
-    font-size: 3rem;
-  }
-  h6 {
-    font-size: 2rem;
-  }
-  /* p,
-  a,
-  em,
-  strong,
-  li {
-    margin-top: 0;
-    font-size: 22px;
-  } */
-}
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -291,7 +253,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #bdbdbd;
+  color: #979797;
 }
 
 /* Buttons
@@ -361,6 +323,7 @@ ol ul {
 }
 li {
   margin-bottom: 1rem;
+  list-style-type: none;
 }
 
 /* Spacing

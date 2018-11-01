@@ -23,22 +23,27 @@
     <body>
         <div class="container">
             <header class="project-header">
-                <nav>
-                    <a href="index.html" id="logo"><img src="assets/images/hd-logo.png" alt="HD logo"></a>
-                    <a id="menu" href="#open-modal">&#8801;</a>
-                </nav>
 
-                <div id="open-modal" class="modal-window">
-                        <div>
-                          <a href="#" title="Close" class="modal-close"><i class="far fa-times-circle"></i></a>
-                          <div class="menu-items">
-                            <h2 class="content-title"><a href="" class="menu-title">Projects</a></h2>
-                            <h2 class="content-title"><a href="" class="menu-title">About Me</a></h2>
-                            <h2 class="content-title"><a href="mailto:hazelmdoctor@gmail.com" class="menu-title">Contact</a></h2>
-                            <h2 class="content-title"><a href="" class="menu-title">Resume</a></h2>
-                          </div>
-                          </div>
-                      </div>
+                <div id="nav" class="navigation">
+                    <span id="close-btn" onclick="navToggle()">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </span>
+                    <div class="logo">
+                        <img src="assets/images/hd-logo.png" alt="HD logo">
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a class="menuItems" href="#">PROJECTS</a></li>
+                        <li><a class="menuItems" href="#">ABOUT</a></li>
+                        <li><a class="menuItems" href="#">RESUME</a></li>
+                    </ul>
+                </div>
+
+                <div id="main">
+                </div>
+
             </header>
 
             <main>
@@ -46,11 +51,9 @@
                     <div class="section-container">
                         <p class="project-step">Summary</p>
                         <h2 class="content-title" style="color: #222222;">OmniCloud</h2>
-                        <p>OmniCloud is a cloud storage and file
-                            synchronization
-                            service that allows users to store, customize,
-                            share, and work on files all in one place, solving a need
-                            for thousands of users worldwide.</p>
+                        <p>OmniCloud is a lightweight cloud storage
+                            service that lets you store, customize,
+                            share, and work on files all in one place.</p>
                         <span class="omnicloud-btn-container">
                             <button class="omnicloud-btn">Desktop Prototype</button>
                             <button class="omnicloud-btn">Mobile Prototype </button>
@@ -61,34 +64,15 @@
 
                     <p class="project-step">Overview</p>
                     <h4 class="project-title">Problem</h4>
-                    <p>Cloud storage apps are known for securely storing
+                    <p>Cloud storage apps are widely known for securing
                         digital assets such as photos and
-                        documents.
-                        But
-                        what if you wanted to create and store your morning
-                        to-do list? Wouldn’t it be easier if
-                        you
-                        could
-                        create that list all in one app? While there are some
-                        apps that lets users edit and share
-                        files,
-                        other can become overwhelmed and get lost in the app.</p>
+                        documents. More recently, creating, editing, and collaborating on content have become popular features in cloud storage apps.
+                        The problem is that the apps tend to be more complex, leaving users more overwhelmed and frustrated.</p>
 
                     <h4 class="project-title">Solution</h4>
-                    <p>OmniCloud aims to address these concerns by bringing
-                        these features together in a simple,
-                        no-frills layout. Our major design challenge was to
-                        offer users a way to jot down notes,
-                        store files, and share ideas in one place. Users
-                        wouldn’t have to jump from one app to another.
-
-                        Keeping the client’s requests in mind, I explored the
-                        requirements’ favorability in the
-                        market
-                        through user research. The design process was built on
-                        consistent feedback as it focused on
-                        bridging the desires of stakeholders and the needs of
-                        users.</p>
+                    <p>At the request of my client, I designed OmniCloud to be more simple and lightweight, while offering a full suite of features.
+                        Users can create, edit, collaborate, and securely store content in one place. Synchonizing in real time, a user can feel
+                        confident that their content is always up to date.</p>
 
                     <h4 class="project-title margin-top">Roles</h4>
                     <ul>
@@ -125,46 +109,10 @@
                         and Analyze</h4>
 
                     <div class="section-container">
-                        <h5 class="project-section">Client Brief</h5>
-                        <p>My client had an idea for a cloud storage app with
-                            the right combination of features to meet
-                            the
-                            needs of a specific audience. They have yet to
-                            explore their vision, brand, and audience,
-                            but
-                            they have a current set of desired features:
-                        </p>
-                        <p style="font-weight: 600;">Requirements:</p>
-                        <ul>
-                            <li>saving content you find on the web (links, images, videos, etc.)
-                            </li>
-                            <li>organizing that content using things like
-                                    categories, tags, groups, and/or folders
-                            </li>
-                            <li>creating content (notes, documents, maybe
-                                    spreadsheets?)
-                            </li>
-                            <li>uploading files (videos, images, PDFs, etc.)
-                                    from a computer or mobile device
-                            </li>
-                            <li>sharing a single item with someone else (and
-                                    vice-versa)
-                            </li>
-                            <li>sharing a folder or group of items with someone
-                                    else (and vice-versa)
-                            </li>
-                            <li>connecting with other users for real-time
-                                    collaboration in notes or documents
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-container">
                         <h5 class="project-section">Exploring the Market</h5>
-                        <p>To begin, I wanted to understand the market for cloud storage apps. I explored the current landscape through a
+                        <p>To begin, I explored the market to determine if existing apps helped users create and edit content. My
                             competitive
-                            analysis, which looked into three major competitors that catered to specific interests. Here are some notable
-                            findings:
+                            analysis looked into three major competitors that catered to specific interests. I found the following:
                         </p>
                         <figure>
                             <img src="assets/images/pinterest.png" alt="Competitive analysis - Pinterest">
@@ -175,54 +123,43 @@
 
                     <div class="section-container">
                         <h5 class="project-section">Gaining Insights from Surveys and Interviews</h5>
-                        <p>After capturing a picture of the competitive landscape, I wanted to understand what users thought about cloud
+                        <p>In addition to understanding the competition, I wanted to capture users' thoughts about cloud
                             storage
                             apps
-                            by creating a survey with the following goals:</p>
-                        <ul style="font-weight: 600;">
-                            <li>To capture users’ general thoughts on cloud storage apps </li>
-                            <li>To understand users’ opinions on their preferred cloud storage apps </li>
-                            <li>To inspect features in the apps that are favorable</li>
-                            <li>To explore pain points and frustrations</li>
-                            <li>To gauge interests in collaboration features</li>
-                        </ul>
-                        <p class="margin-top">Here are the key findings among the 32 students and young professionals between the ages of 18-34. A majority of
-                            them
+                            through a survey.
+                            Here are the key findings among the 32 students and young professionals between the ages of 18-34. A majority of them
                             use
                             well-known cloud storage apps such as Google Drive and DropBox.</p>
                         <ul>
                             <li>
                                 <em>
                                     <strong style="color: #3571B6;">50%</strong> of users utilize cloud storage
-                                            apps for personal
-                                            use and typically store,
-                                            create, edit and
-                                            collaborate on
-                                            files
+                                    apps for personal
+                                    use and typically store,
+                                    create, edit and
+                                    collaborate on
+                                    files
                                 </em>
                             </li>
                             <li>
                                 <em>
                                     <strong style="color: #3571B6;">70% </strong>find it helpful for cloud storage apps to be
-                                        accessible across devices </em>
+                                    accessible across devices </em>
                             </li>
                             <li>
                                 <em><strong style="color: #3571B6;">About half of respondents</strong> find that web interface and
-                                        security could be improved.</em>
+                                    security could be improved.</em>
                             </li>
                             <li>
                                 <em><strong style="color: #3571B6;">There were mixed reviews on collaboration features,</strong>
-                                        yet those who favor them used cloud storage
-                                        apps for
-                                        business</em>
+                                    yet those who favor them used cloud storage
+                                    apps for
+                                    business</em>
                             </li>
-                        
-                            </ul>
 
-                        <p class="margin-top">While these findings were helpful, I have only scratched the surface. It was time to dig deeper and ask: who
-                            really
-                            are
-                            these users? What value do they get from using these cloud storage apps?</p>
+                        </ul>
+
+                        <h5 class="project-section">User Personas</h5>
 
                         <p>To understand our users better, I interviewed three individuals about themselves, their daily habits, and their
                             experiences with cloud storage apps. The interview style was largely open-ended.</p>
@@ -240,10 +177,10 @@
                         </p>
 
                         <div class="persona section-container">
-                            <div class="persona"> 
-                                    <img src="assets/images/maia-persona.png" alt="Maia persona" class="project-img section-container">
+                            <div class="persona">
+                                <img src="assets/images/maia-persona.png" alt="Maia persona" class="project-img section-container">
                             </div>
-                           
+
                             <em class="maia">"I have tons of photos and docs - I need a place to keep them all."</em>
 
                             <h5 class="maia margin-top">Goals</h5>
@@ -263,45 +200,45 @@
                             </ul>
 
                             <div class="omnicloud-btn-container">
-                                    <button class="maia-btn">See full persona</button>
+                                <button class="maia-btn">See full persona</button>
                             </div>
 
-                           
+
                         </div>
 
                         <div class="persona section-container">
                             <div class="persona">
-                                    <img src="assets/images/jeanelle-persona.png" alt="Jeanelle persona" class="project-img section-container">
+                                <img src="assets/images/jeanelle-persona.png" alt="Jeanelle persona" class="project-img section-container">
 
                             </div>
-                            
-                                <em class="jeanelle">“Always in search of the best products for my team’s needs."</em>
-    
-                                <h5 class="jeanelle margin-top">Goals</h5>
-                                <p>To keep digital assets secure; to be more efficient through collaborative work</p>
-    
-                                <h5 class="jeanelle">Frustrations</h5>
-                                <ul class="persona">
-                                    <li>Not enough storage space in premium accounts</li>
-                                    <li>Privacy and security are questionable</li>
-                                </ul>
-    
-                                <h5 class="jeanelle margin-top">Motivations</h5>
-                                <ul class="persona section-container">
-                                    <li>Convenience of working with a team in real time</li>
-                                    <li>Efficient, versatile app</li>
-                                </ul>
-    
-                                <div class="omnicloud-btn-container">
-                                        <button class="jeanelle-btn">See full persona</button>
-                                </div>
-    
+
+                            <em class="jeanelle">“Always in search of the best products for my team’s needs."</em>
+
+                            <h5 class="jeanelle margin-top">Goals</h5>
+                            <p>To keep digital assets secure; to be more efficient through collaborative work</p>
+
+                            <h5 class="jeanelle">Frustrations</h5>
+                            <ul class="persona">
+                                <li>Not enough storage space in premium accounts</li>
+                                <li>Privacy and security are questionable</li>
+                            </ul>
+
+                            <h5 class="jeanelle margin-top">Motivations</h5>
+                            <ul class="persona section-container">
+                                <li>Convenience of working with a team in real time</li>
+                                <li>Efficient, versatile app</li>
+                            </ul>
+
+                            <div class="omnicloud-btn-container">
+                                <button class="jeanelle-btn">See full persona</button>
+                            </div>
+
                         </div>
                     </div>
 
 
                     <div>
-                        <h5 class="project-section">Do Stakeholder Needs = User Needs?</h5>
+                        <h5 class="project-section">Do My Client's Needs = User Needs?</h5>
                         <p>Now that I understood the needs of the two types of users, I re-examined the requirements from the stakeholders to
                             see
                             how
@@ -340,7 +277,7 @@
                         </ul>
                         <p>
                             Do user and stakefolder needs align? <em>Almost.</em> It depends on the type of user.<p>
-        
+
                                 <p>
                                     I realized that the expert user would not only benefit from basic cloud storage app features, but would also
                                     prefer
@@ -355,9 +292,9 @@
                 </section>
 
                 <section>
-                        <h4 class="project-title">Information Architecture</h4>
+                    <h4 class="project-title">Information Architecture</h4>
                     <div>
-                            <h5 class="project-section">User Stories and Flows</h5>
+                        <h5 class="project-section">User Stories and Flows</h5>
                         <p>To map out the interactions of the main features, I listed user stories from low to high priority for both new users
                             and
                             returning users. During the sketching and wireframing process, items high on the priority list were included in the
@@ -398,23 +335,24 @@
                         <p>To visualize these processes, I sketched user flows for items in high priority. I aimed to simplify these stories by
                             keeping familiar flows. The onboarding process, for example, has been a target of complaints by survey responders. To
                             simplify this, I gave users the option of signing up with their Google and Facebook accounts.</p>
-                        
-                            <div class="onboarding">
-                                <p class="project-step" style="color: #222222;">Mapping out the onboarding process</p>
-                                <img src="assets/images/onboarding-sketch.png" alt="Onboarding sketch">
-                                <p class="caption">Initial ideas of seamless onboarding</p>
 
-                                <p class="mobile-text">After feedback and refinement, I mapped the flows digitally for improved legibility.</p>
+                        <div class="onboarding">
+                            <p class="project-step" style="color: #222222;">Mapping out the onboarding process</p>
+                            <img src="assets/images/onboarding-sketch.png" alt="Onboarding sketch">
+                            <p class="caption">Initial ideas of seamless onboarding</p>
 
-                                <div class="onboarding-digital"> 
-                                     <img src="assets/images/onboarding-digital.png" alt="Onboarding flows digitally">
-                                    <p class="caption">After feedback and refinement, I mapped the flows digitally for improved legibility.</p></div>
-                        
-                        
+                            <p class="mobile-text">After feedback and refinement, I mapped the flows digitally for improved legibility.</p>
+
+                            <div class="onboarding-digital">
+                                <img src="assets/images/onboarding-digital.png" alt="Onboarding flows digitally">
+                                <p class="caption">After feedback and refinement, I mapped the flows digitally for improved legibility.</p>
+                            </div>
+
+
                         </div>
                     </div>
                     <div>
-                            <h5 class="project-section">Sitemaps and Wireframes</h5>
+                        <h5 class="project-section">Sitemaps and Wireframes</h5>
                         <p>Taking inspiration from my research findings and user flows, I laid out a sitemap that would be appropriate for a
                             minimum
                             viable product (MVP). The primary pages are the landing page and the dashboard. Other core features such as logins
@@ -427,14 +365,14 @@
                         <img src="assets/images/landing-page-sketch.png" alt="Landing page wireframe sketch">
                         <p class="caption">Part of the landing page</p>
                         <img src="assets/images/landing-page-wireframe.png" alt="Landing page digital wireframe">
-                
+
                         <img src="assets/images/dashboard-sketch.png" alt="Dashboard wireframe sketch" class="margin-top">
                         <img src="assets/images/dashboard-wireframe.png" alt="Dashboard digital wireframe" class="margin-top">
                         <p class="
                             caption">Dashboard versions</p>
                     </div>
                     <div>
-                            <h5 class="project-section">1st Round of Testing: User Flows </h5>
+                        <h5 class="project-section">1st Round of Testing: User Flows </h5>
                         <p>To test my assumptions about appropriate placements of elements, I conducted remote usability tests with two
                             individuals.
                             Testers were tasked to do three tasks: signing up for an account, adding a piece of content, and organizing content.
@@ -451,7 +389,7 @@
                         <p>Before sketching page layouts, I decided to work on the brand identity to figure out the hierarchy of elements and
                             sprinkle
                             content throughout the site. </p>
-                     
+
 
                         <p>
                             <strong>The origin of the name OmniCloud:</strong>
@@ -505,8 +443,8 @@
                             scheme. These details reflect OmniCloud’s expertise, professionalism, and openness to evolve as a modern cloud
                             storage
                             application. </p>
-                            <div class="resize-img"> <img src="assets/images/omnicloud-logo.png" alt="OmniCloud logo" class="mobile-resize-img"></div>
-                       
+                        <div class="resize-img"> <img src="assets/images/omnicloud-logo.png" alt="OmniCloud logo" class="mobile-resize-img"></div>
+
                         <p>To further assist users in feeling the sense of professionalism, robustness, and reliability, the following color
                             palettes
                             and typography were selected. For more details, check out the OmniCloud Style Guide. </p>
@@ -518,17 +456,17 @@
                         <p>With feedback gathered about layouts and additional features, I developed high-fidelity mockups for both desktop and
                             mobile views with Sketch and InVision. Using the style guide, I first built a design system to maintain consistency
                             across patterns and elements throughout the site.</p>
-                            <div class="resize-img">
-                                    <img src="assets/images/omnicloud-dashboard.png" alt="Hi-fi desktop dashboard">
-                                    <img src="assets/images/omnicloud-text-editor.png" alt="Hi-fi desktop text editor">
-                                
-                                    <img src="assets/images/mobile-dashboard.png" alt="Hi-fi mobile dashboard" class="mobile-resize-img">
-                         
-                                    <img src="assets/images/mobile-text-editor.png" alt="Hi-fi mobile text editor" class="mobile-resize-img">
+                        <div class="resize-img">
+                            <img src="assets/images/omnicloud-dashboard.png" alt="Hi-fi desktop dashboard">
+                            <img src="assets/images/omnicloud-text-editor.png" alt="Hi-fi desktop text editor">
 
-                            </div>
-                       
-                    
+                            <img src="assets/images/mobile-dashboard.png" alt="Hi-fi mobile dashboard" class="mobile-resize-img">
+
+                            <img src="assets/images/mobile-text-editor.png" alt="Hi-fi mobile text editor" class="mobile-resize-img">
+
+                        </div>
+
+
                     </div>
 
                     <div>
@@ -555,7 +493,8 @@
                         <h5 class="project-section">3rd Round of Testing: Preferences for Style and Function</h5>
                         <p>Taking recent suggestions into consideration, I revised parts of the OmniCloud desktop and mobile mockups and
                             conducted
-                            another usability test to determine what new users preferred. Using UsabilityHub, I sent out a brief preference test with the
+                            another usability test to determine what new users preferred. Using UsabilityHub, I sent out a brief preference test with
+                            the
                             following design comparisons:</p>
                         <div>
                             <img src="assets/images/results-settings.png" alt="Preference test - settings">
@@ -580,8 +519,8 @@
                             prototypes here:</p>
 
                         <span class="omnicloud-btn-container">
-                        <button class="omnicloud-btn">Desktop Prototype</button>
-                        <button class="omnicloud-btn">Mobile Prototype</button>
+                            <button class="omnicloud-btn">Desktop Prototype</button>
+                            <button class="omnicloud-btn">Mobile Prototype</button>
                         </span>
 
                     </div>
@@ -597,12 +536,12 @@
                         outside the box and research deeper to address this issue. I learned that by researching and testing early and
                         frequently,
                         your project would be spared from trouble down the line.</p>
-            
+
                     <p> I also learned to embrace iteration, but to also be mindful of deadlines. Iterations debunk our initial assumptions about
                         the
                         “best version” of our product, but they could be time-consuming. I learned that minimizing scope creeps and establishing
                         design systems early in the creative process would save time and avoid missing deadlines.</p>
-              
+
                     <p>Overall, this project helped me become more confident in my research and design thinking skills. Going forward, I hope to
                         refine these skills with complex projects involving teams. My next goal is to learn more about the latest design methods,
                         so
@@ -621,21 +560,21 @@
 
                 <a href="javascript:" id="return-to-top"><i class="fas fa-angle-up"></i></a>
 
-    
+
             </main>
         </div>
 
         <footer>
-                <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
-                <ul class="footer-links">
-                    <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
-                </ul>
-                <p class="copyright">Designed and developed with 🧡💛💙  by Hazel Doctor.</p>
-            </footer>
-            
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+            <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
+            <p class="copyright">Designed and developed with 🧡💛 by Hazel Doctor.</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/script.js"></script>
 
     </body>
