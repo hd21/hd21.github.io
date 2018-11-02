@@ -16,6 +16,7 @@
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/custom.css">
     </head>
@@ -48,8 +49,12 @@
 
             <main>
                 <section class="summary-container">
-                    <div class="section-container">
-                        <p class="project-step">Summary</p>
+                    <div class="img-wrapper summary-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+                        <img src="assets/images/omnicloud-mockups.png" alt="Omnicloud landing page" class="project-img">
+                    </div>
+
+                    <div class="section-container width-lg margin-top">
+
                         <h2 class="content-title" style="color: #222222;">OmniCloud</h2>
                         <p>OmniCloud is a lightweight cloud storage
                             service that lets you store, customize,
@@ -60,50 +65,62 @@
                         </span>
                     </div>
 
-                    <img src="assets/images/omnicloud-landing-page.png" alt="Omnicloud landing page" class="project-img">
+                    <div class="section-container width-lg margin-top-lg">
+                        <p class="project-step-lg">Overview</p>
+                        <h4 class="project-title">Problem</h4>
+                        <p>Cloud storage apps are widely known for securing
+                            digital assets such as photos and
+                            documents. More recently, creating, editing, and collaborating on content have become popular features in cloud storage
+                            apps.
+                            The problem is that the apps tend to be more complex, leaving users more overwhelmed and frustrated.</p>
 
-                    <p class="project-step">Overview</p>
-                    <h4 class="project-title">Problem</h4>
-                    <p>Cloud storage apps are widely known for securing
-                        digital assets such as photos and
-                        documents. More recently, creating, editing, and collaborating on content have become popular features in cloud storage apps.
-                        The problem is that the apps tend to be more complex, leaving users more overwhelmed and frustrated.</p>
+                        <h4 class="project-title">Solution</h4>
+                        <p>At the request of my client, I designed OmniCloud to be more simple and lightweight, while offering a full suite of
+                            features.
+                            Users can create, edit, collaborate, and securely store content in one place. Synchonizing in real time, a user can feel
+                            confident that their content is always up to date.</p>
 
-                    <h4 class="project-title">Solution</h4>
-                    <p>At the request of my client, I designed OmniCloud to be more simple and lightweight, while offering a full suite of features.
-                        Users can create, edit, collaborate, and securely store content in one place. Synchonizing in real time, a user can feel
-                        confident that their content is always up to date.</p>
+                        <div class="row">
+                            <div class="four columns">
+                                <h4 class="project-title margin-top">Roles</h4>
+                                <ul>
+                                    <li>UX Researcher</li>
+                                    <li>Content Strategist</li>
+                                    <li>Visual Designer</li>
+                                    <li>UX Designer</li>
+                                </ul>
+                            </div>
 
-                    <h4 class="project-title margin-top">Roles</h4>
-                    <ul>
-                        <li>UX Researcher</li>
-                        <li>Content Strategist</li>
-                        <li>Visual Designer</li>
-                        <li>UX Designer</li>
-                    </ul>
+                            <div class="five columns">
+                                <h4 class="project-title margin-top">Deliverables</h4>
+                                <ul>
+                                    <li>Competitive analysis</li>
+                                    <li>Survey results</li>
+                                    <li>User personas</li>
+                                    <li>Sitemap</li>
+                                    <li>Wireframes</li>
+                                    <li>High fidelity prototypes</li>
+                                </ul>
+                            </div>
 
+                            <div class="three columns">
 
-                    <h4 class="project-title margin-top">Deliverables</h4>
-                    <ul>
-                        <li>Competitive analysis</li>
-                        <li>Survey results</li>
-                        <li>User personas</li>
-                        <li>Sitemap</li>
-                        <li>Wireframes</li>
-                        <li>High fidelity prototypes</li>
-                    </ul>
+                                <h4 class="project-title margin-top">Tools</h4>
+                                <ul>
+                                    <li>Sketch</li>
+                                    <li>Balsamiq</li>
+                                    <li>UsabilityHub</li>
+                                    <li>InVision</li>
+                                </ul>
 
-                    <h4 class="project-title margin-top">Tools</h4>
-                    <ul>
-                        <li>Sketch</li>
-                        <li>Balsamiq</li>
-                        <li>UsabilityHub</li>
-                        <li>InVision</li>
-                    </ul>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </section>
 
-                <section class="section-container">
+                <section class="section-container width-lg">
                     <p class="project-step">Process</p>
                     <h4 class="project-title">Discover
                         and Analyze</h4>
@@ -557,6 +574,10 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="js/script.js"></script>
 
     </body>

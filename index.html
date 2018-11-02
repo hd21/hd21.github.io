@@ -15,6 +15,7 @@
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/custom.css">
     </head>
@@ -24,26 +25,26 @@
 
             <header class="hero">
 
-                    <div id="nav" class="navigation">
-                            <span id="close-btn" onclick="navToggle()">
-                                <span class="bar1"></span>
-                                <span class="bar2"></span>
-                                <span class="bar3"></span>
-                            </span>
-                          <div class="logo">
-                                <img src="assets/images/hd-logo.png" alt="HD logo">
-                          </div>
-                          
-                          <ul class="nav-links">
-                            <li><a class="menuItems" href="#">PROJECTS</a></li>		
-                            <li><a class="menuItems" href="#">ABOUT</a></li>				
-                            <li><a class="menuItems" href="#">RESUME</a></li>
-                          </ul>			
-                          </div>
-                          
-                          <div id="main">
-                          </div>
-              
+                <div id="nav" class="navigation">
+                    <span id="close-btn" onclick="navToggle()">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </span>
+                    <div class="logo">
+                        <img src="assets/images/hd-logo.png" alt="HD logo">
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a class="menuItems" href="#">PROJECTS</a></li>
+                        <li><a class="menuItems" href="#">ABOUT</a></li>
+                        <li><a class="menuItems" href="#">RESUME</a></li>
+                    </ul>
+                </div>
+
+                <div id="main">
+                </div>
+
 
                 <div class="hero-text">
                     <h1 id="hero-title">Hi! I'm <span style="color: #67a2ae;">Hazel Doctor</span> 👋 - <br> a User Experience Designer and Developer
@@ -78,16 +79,21 @@
         </div>
 
         <footer>
-                <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
-                <ul class="footer-links">
-                    <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
-                </ul>
-                <p class="copyright">Designed and developed with 🧡💛  by Hazel Doctor.</p>
-            </footer>
+            <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
+            <p class="copyright">Designed and developed with 🧡💛 by Hazel Doctor.</p>
+        </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>

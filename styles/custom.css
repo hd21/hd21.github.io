@@ -128,7 +128,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .hero {
-  height: 100vh;
+  height: 60vh;
 }
 
 #hero-title {
@@ -160,7 +160,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 80%;
+    height: 100%;
   }
 
   #hero-button {
@@ -494,6 +494,10 @@ aside ul {
 }
 
 @media (min-width: 750px) {
+  .margin-top {
+    margin-top: 3rem;
+  }
+
   .omnicloud-btn-container {
     display: flex;
     justify-content: center;
@@ -530,4 +534,42 @@ aside ul {
 }
 
 @media (min-width: 1000px) {
+  .project-step-lg {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8rem;
+    color: #3571b6;
+  }
+
+  .width-lg {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .omnicloud-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .omnicloud-btn {
+    margin: 0 10px;
+  }
+
+  .project-img {
+    width: 75%;
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .img-wrapper {
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      rgba(163, 189, 237, 0.7) 0%,
+      rgba(105, 145, 199, 0.7) 100%
+    );
+    z-index: 2;
+  }
 }
