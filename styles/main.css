@@ -385,6 +385,25 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 
+.highlight {
+  position: relative;
+  background-origin: 0;
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-position 1.75s ease-out;
+  padding: 4px 0px;
+}
+
+.highlight.show {
+  background-position: -100% 100%;
+}
+
+.about,
+.about.show {
+  background-image: linear-gradient(to right, transparent 50%, #67a2ae60 50%);
+}
+
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
