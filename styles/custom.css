@@ -136,15 +136,21 @@
   margin-bottom: 1.5rem;
 }
 
-#hero-button {
+.hero-button {
   background-color: #67a2ae;
   border-color: #67a2ae;
+}
+
+.hero-button a {
   color: #fff;
 }
 
-#hero-button:hover {
+.hero-button:hover {
   background-color: #fff;
   border-color: #67a2ae;
+}
+
+.hero-button a:hover {
   color: #67a2ae;
 }
 
@@ -293,13 +299,20 @@
   }
 
   .content-btn {
-    color: #e9e9e9;
     border-color: #e9e9e9;
+  }
+
+  .content-btn a {
+    color: #e9e9e9;
   }
 
   .content-btn:hover {
     background-color: #e9e9e9;
     border-color: #e9e9e9;
+    color: #222;
+  }
+
+  .content-btn a:hover {
     color: #222;
   }
 }
