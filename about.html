@@ -1,178 +1,236 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <title>Hazel Doctor - UX Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="32x32" href="assets/images/hd-favicon.png" />
 
-    <head>
-        <title>Hazel Doctor - UX Designer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" sizes="32x32" href="assets/images/hd-favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-128745281-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128745281-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
+      gtag('config', 'UA-128745281-1');
+    </script>
 
-            gtag('config', 'UA-128745281-1');
-        </script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Playfair+Display:400,400i,700,700i"
+      rel="stylesheet"
+    />
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-            crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+  </head>
 
-        <!--Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Playfair+Display:400,400i,700,700i" rel="stylesheet">
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/hd-logo.png" alt="HD logo"
+            /></a>
+          </div>
 
-        <!-- Custom Styles -->
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/custom.css">
-    </head>
-
-    <body>
-        <div class="container">
-            <header>
-
-                <div id="nav" class="navigation">
-                    <span id="close-btn" onclick="navToggle()">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
-                    </span>
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/images/hd-logo.png" alt="HD logo"></a>
-                    </div>
-
-                    <ul class="nav-links">
-                        <li><a class="menuItems" href="index.html#omnicloud-background">PROJECTS</a></li>
-                        <li><a class="menuItems" href="about.html">ABOUT</a></li>
-                        <li><a class="menuItems" href="assets/Hazel_Doctor_Resume.pdf" target="_blank">RESUME</a></li>
-                    </ul>
-                </div>
-
-                <div id="main">
-                </div>
-
-            </header>
-
-            <main>
-
-                <section>
-                    <div class="row" style="margin: 5rem -10% 0 -10%; ">
-                        <div class="six columns">
-                            <img src="assets/images/me.jpg" alt="Hazel Doctor" style="width: 90%; height: auto;">
-
-                            <div style="margin-top: 5rem;">
-                                <p class="content-type" style="color: #67a2ae;">Contact</p>
-                                <p>hazelmdoctor@gmail.com</p>
-
-                                <p class="content-type" style="color: #67a2ae;">See work experience</p>
-                                <ul class="no-list-style case-study-li">
-                                    <li><a href="www.linkedin.com/in/hazeldoctor" target="_blank">LinkedIn</a></li>
-                                    <li><a href="assets/Hazel_Doctor_Resume.pdf" target="_blank">Resume</a></li>
-                                </ul>
-
-                                <p class="content-type" style="color: #67a2ae;">Interests</p>
-                                <ul class="no-list-style case-study-li">
-                                    <li>Reading</li>
-                                    <li>Brazilian jiu jitsu</li>
-                                    <li>Fashion</li>
-                                    <li>Alternative rock</li>
-                                </ul>
-
-                                <p class="content-type" style="color: #67a2ae;">Languages</p>
-                                <ul class="no-list-style case-study-li">
-                                    <li>Tagalog (Filipino)</li>
-                                    <li>German</li>
-                                </ul>
-
-                                <p class="content-type" style="color: #67a2ae;">Hometowns</p>
-                                <ul class="no-list-style case-study-li">
-                                    <li>Atlanta, GA</li>
-                                    <li>Saipan, CNMI</li>
-                                </ul>
-
-
-                            </div>
-
-                        </div>
-
-                        <div class="six columns">
-                            <h3 style="font-family: 'Playfair Display', serif; font-weight: 700; font-style: italic; letter-spacing: 0.02em; color: #67a2ae;">Hello,
-                                hello!</h3>
-                            <p>I’m currently a user experience designer and developer in Atlanta, GA. Throughout my
-                                career, I have been interested in
-                                designing products, systems, and experiences that not only create a positive impact, but also bridge the gap
-                                between
-                                user
-                                and business needs.</p>
-
-
-                            <p>When I’m not designing, you can find me practicing Brazilian jiu jitsu, hiking, or reading. </p>
-
-                            <h4 style="font-family: 'Playfair Display', serif; font-weight: 700; color: #67a2ae;">My pathway to design</h4>
-
-                            <p>A few years ago, I was a research associate for a psychosis study, where I worked with
-                                diagnostic devices and software to monitor brain activity. While calibrating the device and program, I came across
-                                errors
-                                and resolved them with our specialist or through online forums. <span class="highlight about">Over time, I
-                                    became interested in the design and
-                                    mechanisms of the software bundle so that I could efficiently troubleshoot issues. This led me to learn how to
-                                    code.</span></p>
-
-                            <p>After learning object-oriented programming, I landed an internship with a dental staffing firm as a front-end
-                                developer. Not only did I drastically improve my JavaScript (specifically React!) skills, but I also understood the
-                                product from user and stakeholder perspectives. <span class="highlight about">By working with a UX designer, I
-                                    learned to research our
-                                    clients’
-                                    pain points, develop user personas, map out user flows, and test features - all while communicating and iterating
-                                    with
-                                    the development team.</span> I realized that designing systems and refining experiences for people who needed it
-                                most
-                                excited
-                                me. </p>
-
-
-                            <p><span class="highlight about">Eventually, I learned to balance my interests, curious nature, and analytical background
-                                    through design.</span> I'm currently doing this through several complex projects. To me, design
-                                is
-                                more than just clean interfaces and captivating interactions. As IDEO aptly puts it, <em>“Design
-                                    is about bringing
-                                    together
-                                    what is desirable from a human point of view with what is technologically feasible and economically viable.”</em>
-                                It’s
-                                also
-                                about tackling complex problems through empathy, creativity, and collaboration. Going forward, I am refining my
-                                design
-                                process and hope to someday be involved in digital health.</p>
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-            </main>
-        </div>
-
-        <footer>
-            <h2 class="footer-text">Let's <span style="color: #73B9C2;">talk.</span></h2>
-            <ul class="footer-links">
-                <li><a href="https://www.linkedin.com/in/hazeldoctor/"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://twitter.com/hazeldoesthings"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="mailto:hazelmdoctor@gmail.com"><i class="far fa-envelope"></i></a></li>
+          <nav>
+            <ul>
+              <li>
+                <a class="menuItems" href="index.html#omnicloud-background"
+                  >PROJECTS</a
+                >
+              </li>
+              <li><a class="menuItems" href="about.html">ABOUT</a></li>
+              <li>
+                <a
+                  class="menuItems"
+                  href="assets/Hazel_Doctor_Resume.pdf"
+                  target="_blank"
+                  >RESUME</a
+                >
+              </li>
             </ul>
-            <p class="copyright">Designed and developed with 🧡💛 by Hazel Doctor.</p>
-        </footer>
+          </nav>
+        </div>
+      </header>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+      <main>
+        <section>
+          <div class="row" style="margin: 5rem -10% 0 -10%; ">
+            <div class="six columns">
+              <img
+                src="assets/images/me.jpg"
+                alt="Hazel Doctor"
+                style="width: 90%; height: auto;"
+              />
 
+              <div style="margin-top: 5rem;">
+                <p class="content-type" style="color: #67a2ae;">Contact</p>
+                <p>hazelmdoctor@gmail.com</p>
+
+                <p class="content-type" style="color: #67a2ae;">
+                  See work experience
+                </p>
+                <ul class="no-list-style case-study-li">
+                  <li>
+                    <a href="www.linkedin.com/in/hazeldoctor" target="_blank"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a href="assets/Hazel_Doctor_Resume.pdf" target="_blank"
+                      >Resume</a
+                    >
+                  </li>
+                </ul>
+
+                <p class="content-type" style="color: #67a2ae;">Interests</p>
+                <ul class="no-list-style case-study-li">
+                  <li>Reading</li>
+                  <li>Brazilian jiu jitsu</li>
+                  <li>Fashion</li>
+                  <li>Alternative rock</li>
+                </ul>
+
+                <p class="content-type" style="color: #67a2ae;">Languages</p>
+                <ul class="no-list-style case-study-li">
+                  <li>Tagalog (Filipino)</li>
+                  <li>German</li>
+                </ul>
+
+                <p class="content-type" style="color: #67a2ae;">Hometowns</p>
+                <ul class="no-list-style case-study-li">
+                  <li>Atlanta, GA</li>
+                  <li>Saipan, CNMI</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="six columns">
+              <h3
+                style="font-family: 'Playfair Display', serif; font-weight: 700; font-style: italic; letter-spacing: 0.02em; color: #67a2ae;"
+              >
+                Hello, hello!
+              </h3>
+              <p>
+                I’m currently a user experience designer and developer in
+                Atlanta, GA. Throughout my career, I have been interested in
+                designing products, systems, and experiences that not only
+                create a positive impact, but also bridge the gap between user
+                and business needs.
+              </p>
+
+              <p>
+                When I’m not designing, you can find me practicing Brazilian jiu
+                jitsu, hiking, or reading.
+              </p>
+
+              <h4
+                style="font-family: 'Playfair Display', serif; font-weight: 700; color: #67a2ae;"
+              >
+                My pathway to design
+              </h4>
+
+              <p>
+                A few years ago, I was a research associate for a psychosis
+                study, where I worked with diagnostic devices and software to
+                monitor brain activity. While calibrating the device and
+                program, I came across errors and resolved them with our
+                specialist or through online forums.
+                <span class="highlight about"
+                  >Over time, I became interested in the design and mechanisms
+                  of the software bundle so that I could efficiently
+                  troubleshoot issues. This led me to learn how to code.</span
+                >
+              </p>
+
+              <p>
+                After learning object-oriented programming, I landed an
+                internship with a dental staffing firm as a front-end developer.
+                Not only did I drastically improve my JavaScript (specifically
+                React!) skills, but I also understood the product from user and
+                stakeholder perspectives.
+                <span class="highlight about"
+                  >By working with a UX designer, I learned to research our
+                  clients’ pain points, develop user personas, map out user
+                  flows, and test features - all while communicating and
+                  iterating with the development team.</span
+                >
+                I realized that designing systems and refining experiences for
+                people who needed it most excited me.
+              </p>
+
+              <p>
+                <span class="highlight about"
+                  >Eventually, I learned to balance my interests, curious
+                  nature, and analytical background through design.</span
+                >
+                I'm currently doing this through several complex projects. To
+                me, design is more than just clean interfaces and captivating
+                interactions. As IDEO aptly puts it,
+                <em
+                  >“Design is about bringing together what is desirable from a
+                  human point of view with what is technologically feasible and
+                  economically viable.”</em
+                >
+                It’s also about tackling complex problems through empathy,
+                creativity, and collaboration. Going forward, I am refining my
+                design process and hope to someday be involved in digital
+                health.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <h2 class="footer-text">
+        Let's <span style="color: #73B9C2;">talk.</span>
+      </h2>
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.linkedin.com/in/hazeldoctor/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/hazeldoesthings"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:hazelmdoctor@gmail.com"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="copyright">Designed and developed with 🧡💛 by Hazel Doctor.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
