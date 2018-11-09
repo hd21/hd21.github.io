@@ -404,10 +404,6 @@ hr {
   background-image: linear-gradient(to right, transparent 50%, #67a2ae60 50%);
 }
 
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Self Clearing Goodness */
 .container:after,
 .row:after,
 .u-cf {
