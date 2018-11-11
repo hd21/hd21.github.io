@@ -20,6 +20,21 @@ $('#return-to-top').click(function() {
   );
 });
 
+// Let side menu disappear
+
+$(window).scroll(function() {
+  var scrollPos = $(this).scrollTop();
+  if ((scrollPos >= 480 && scrollPos < 6200) || scrollPos > 8670) {
+    $('div#side-menu')
+      .removeClass('hidden')
+      .fadeIn(300);
+  } else {
+    $('#side-menu').fadeOut(300);
+  }
+});
+
+// Highlight text
+
 $(window).scroll(function() {
   $('.highlight').each(function() {
     if ($(this).onHighlight()) {
@@ -51,3 +66,10 @@ $.prototype.onHighlight = function() {
     viewport.top > boundary.bottom
   );
 };
+
+// Detecting scroll position
+
+// window.addEventListener('scroll', function(event) {
+//   var scroll = this.scrollY;
+//   console.log(scroll);
+// });
