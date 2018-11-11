@@ -1,8 +1,17 @@
-// $(document).ready(function() {
-//   $(this).scrollTop(0);
-// });
+// Scroll to section from side menu
 
-// Scroll to Top
+$('#side-menu > ul > li > a').click(function(e) {
+  e.preventDefault();
+  var section = $(this).attr('href');
+  $('html, body').animate(
+    {
+      scrollTop: $(section).offset().top - 250,
+    },
+    'slow'
+  );
+});
+
+// Scroll to top
 
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {
