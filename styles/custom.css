@@ -140,6 +140,17 @@ nav {
     display: flex;
   }
 }
+@media (min-width: 1000px) {
+  .hero-text {
+    width: 100%;
+    height: auto;
+  }
+
+  #hero-title {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /* Featured Projects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -295,6 +306,10 @@ nav {
     width: 70%;
     height: auto;
     margin: 5rem auto 0 12vw;
+  }
+
+  .content-details {
+    width: 60%;
   }
 }
 
@@ -470,46 +485,6 @@ aside ul {
   text-align: center;
 }
 
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  display: block;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 16px;
-  top: 10px;
-  font-size: 30px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-  color: #fff;
-  top: 5px;
-}
-
 @media (min-width: 750px) {
   .caption {
     font-size: 14px;
@@ -657,13 +632,6 @@ aside ul {
 
   .flows,
   .wireframes {
-    margin: 0 -26.67%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .flows,
-  .wireframes {
-    margin: 0 -30.5%;
+    margin: 0 -33%;
   }
 }
