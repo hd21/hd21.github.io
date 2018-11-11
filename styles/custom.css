@@ -95,7 +95,8 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .hero {
-  height: 90vh;
+  height: 55vh;
+  display: flex;
 }
 
 #hero-title {
@@ -104,12 +105,10 @@ nav {
 }
 
 .hero-text {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 80%;
 }
 
 .hero-button {
@@ -133,38 +132,12 @@ nav {
 }
 
 @media (min-width: 400px) {
-  #hero-title {
-    width: 90%;
-    margin-bottom: 5rem;
+  .hero-button {
+    font-size: 1em;
   }
 
   .hero-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 70%;
-  }
-
-  .hero-button {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 1000px) {
-  .hero {
-    height: 65vh;
-  }
-
-  .hero-text {
-    height: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero {
-    height: 50vh;
   }
 }
 
