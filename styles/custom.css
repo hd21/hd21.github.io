@@ -317,6 +317,14 @@ nav {
   }
 }
 
+@media (min-width: 1200px) {
+  .omnicloud img {
+    width: 70%;
+    height: auto;
+    margin: 5rem auto 0 12vw;
+  }
+}
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -386,11 +394,28 @@ img {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .omnicloud-btn {
   font-size: 1em;
   border: 2px solid #3571b6;
-  color: #3571b6;
+  background-color: #3571b6;
+  padding: 0;
   width: 235px;
+}
+
+.omnicloud-btn:hover {
+  font-size: 1em;
+  border: 2px solid #3571b6;
+  background-color: #fff;
+}
+
+.omnicloud-btn a {
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.omnicloud-btn a:hover {
+  color: #3571b6;
 }
 
 .project-step {
