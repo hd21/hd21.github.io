@@ -639,3 +639,12 @@ aside ul {
     margin: 0 -33%;
   }
 }
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1000px) {
+  .about-margin {
+    margin: 15rem -10% 0 -10%;
+  }
+}
