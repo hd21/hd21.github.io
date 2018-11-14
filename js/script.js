@@ -11,19 +11,6 @@ $('#side-menu > ul > li > a').click(function(e) {
   );
 });
 
-// Let side menu disappear
-
-$(window).scroll(function() {
-  var scrollPos = $(this).scrollTop();
-  if ((scrollPos >= 480 && scrollPos < 6200) || scrollPos > 8670) {
-    $('div#side-menu')
-      .removeClass('hidden')
-      .fadeIn(300);
-  } else {
-    $('#side-menu').fadeOut(300);
-  }
-});
-
 // Highlight text
 
 $(window).scroll(function() {

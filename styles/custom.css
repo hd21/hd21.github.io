@@ -95,12 +95,10 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .hero {
-  height: 55vh;
   display: flex;
 }
 
 #hero-title {
-  width: 87%;
   margin-bottom: 3rem;
 }
 
@@ -132,6 +130,10 @@ nav {
 }
 
 @media (min-width: 400px) {
+  .hero {
+    height: 55vh;
+  }
+
   .hero-button {
     font-size: 1em;
   }
@@ -356,7 +358,7 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .deliverable-link {
-  color: #3571b6;
+  color: #47b5d8;
   font-weight: 600;
 }
 
@@ -385,15 +387,15 @@ img {
 
 .omnicloud-btn {
   font-size: 1em;
-  border: 2px solid #3571b6;
-  background-color: #3571b6;
+  border: 2px solid #47b5d8;
+  background-color: #47b5d8;
   padding: 0;
   width: 235px;
 }
 
 .omnicloud-btn:hover {
   font-size: 1em;
-  border: 2px solid #3571b6;
+  border: 2px solid #47b5d8;
   background-color: #fff;
 }
 
@@ -403,7 +405,7 @@ img {
 }
 
 .omnicloud-btn a:hover {
-  color: #3571b6;
+  color: #47b5d8;
 }
 
 .project-step {
@@ -452,8 +454,25 @@ figure img {
 
 .maia-btn {
   border: 2px solid #66a098;
-  color: #66a098;
+  background-color: #66a098;
   font-size: 1em;
+  padding: 0;
+  width: 235px;
+}
+
+.maia-btn:hover {
+  font-size: 1em;
+  border: 2px solid #66a098;
+  background-color: #fff;
+}
+
+.maia-btn a {
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.maia-btn a:hover {
+  color: #66a098;
 }
 
 .jeanelle {
@@ -463,8 +482,25 @@ figure img {
 
 .jeanelle-btn {
   border: 2px solid #6c7fa3;
-  color: #6c7fa3;
+  background-color: #6c7fa3;
   font-size: 1em;
+  padding: 0;
+  width: 235px;
+}
+
+.jeanelle-btn:hover {
+  font-size: 1em;
+  border: 2px solid #6c7fa3;
+  background-color: #fff;
+}
+
+.jeanelle-btn a {
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.jeanelle-btn a:hover {
+  color: #6c7fa3;
 }
 
 .sitemap,
@@ -540,11 +576,10 @@ aside ul {
   .menu {
     position: fixed;
     z-index: 1;
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.65);
     left: 0;
     width: 225px;
     overflow-y: auto;
-    height: 100%;
   }
 
   .sideNav {
@@ -555,7 +590,7 @@ aside ul {
     -webkit-transition: 0.5s all ease-out;
     -moz-transition: 0.5s all ease-out;
     transition: 0.5s all ease-out;
-    border-top: 3px solid white;
+    border-top: 3px solid transparent;
     color: #979797;
     text-decoration: none;
   }
