@@ -7,7 +7,7 @@
   padding-top: 2rem;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .nav-container ul li {
@@ -96,9 +96,16 @@ nav {
 
 .hero {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero-title {
+  margin: 3rem 0;
+}
+
+#hero-second-msg {
+  font-weight: 400;
   margin-bottom: 3rem;
 }
 
@@ -131,7 +138,14 @@ nav {
 
 @media (min-width: 400px) {
   .hero {
-    height: 55vh;
+    height: 60vh;
+  }
+
+  .hero-text {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .hero-button {
@@ -141,16 +155,37 @@ nav {
   .hero-text {
     display: flex;
   }
+
+  main {
+    margin-top: 9rem;
+  }
 }
+
 @media (min-width: 1000px) {
+  .hero {
+    height: 55vh;
+  }
+
   .hero-text {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin-top: 60px;
   }
 
   #hero-title {
     width: 100%;
     height: auto;
+    margin: 4rem 0 3rem 0;
+  }
+
+  .hero-button {
+    height: 55px;
+    font-size: 1.35em;
+  }
+
+  .hero-button a {
+    color: #fff;
+    padding: 25px 35px;
   }
 }
 
